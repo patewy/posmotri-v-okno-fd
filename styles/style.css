@@ -16,6 +16,9 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -48,12 +51,6 @@ ol {
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
-}
-
-.page {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .content {
@@ -106,7 +103,7 @@ ol {
 }
 
 .content__list-container {
-  max-height: 298px;     
+  height: 298px;     
   overflow-y: auto;
   position: relative;
 }
@@ -134,7 +131,7 @@ ol {
   line-height: 21.6px;
   font-weight: 400;
   margin-bottom: 5px;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
 }
 
 .search-form__fieldset {
@@ -142,7 +139,7 @@ ol {
 }
 
 .search-form__textfield {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
@@ -164,10 +161,6 @@ ol {
   outline: none;
   gap: 5px;
   cursor: pointer;
-}
-
-.search-form__label:has(.search-form__textfield:focus-visible) {
-  outline: 1px solid white;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -215,7 +208,7 @@ ol {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 26px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   color: white;
 }
 
@@ -243,7 +236,11 @@ ol {
   cursor: pointer;
 }
 
-.content__card-link_current:active{
+.content__card-link_current{
+  background-color: #545050;
+}
+
+.content__card-link:active {
   background-color: #545050;
 }
 
@@ -252,7 +249,7 @@ ol {
   font-size: 30px;
   font-weight: 700;
   line-height: 30px;
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   margin-bottom: 6px;
   overflow: hidden; 
   text-overflow: ellipsis; 
@@ -261,7 +258,7 @@ ol {
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   font-weight: normal;
   font-weight: 400;
@@ -292,7 +289,8 @@ ol {
   background-color: transparent;  
   color: white;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans Condensed', sans-serif;
+  min-height: 34px;
 }
 
 .button:focus {
@@ -314,12 +312,10 @@ ol {
 
 .search-form__submit-button {
   min-width: 194px;
-  min-height: 34px;
 }
 
 .more-button {
   margin-top: 30px;
   min-width: 100%;
-  min-height: 34px;
 }
 
